@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <script src="Script1.js"></script>
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+    </style>
+</head>
+<body>
+    <div class="container p-3 py-4">
+        <header>
+            <h3 class="font-weight-bold">Social Media Dashboard</h3>
+            <strong>Total Followers: 23,004</strong>
+            <hr class="d-lg-none" />
+            <div class="col-lg-5 row float-lg-right">
+                <strong class="col-4">Dark mode</strong>
+                <div class="w-25 h-25 toggle-background ">
+                    <div class="day"></div>
+                    <div class="night"></div>
+                    <div class="toggle  ">
+                        <img class="h-75 w-50 " id="moon" src="images/moon.svg" alt="moon" />
+                        <img id="sun" src="images/sun.png" alt="sun" />
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <section class=" container-fluid d-lg-flex m-0 justify-content-between px-lg-0">
+            <div class=" jumbotron d-flex flex-column align-items-center mt-5 mt-lg-0 facebook col-lg-3 py-lg-4 card">
+                <div class="row">
+                    <img src="images/icon-facebook.svg" alt="icon facebook" />
+                    <strong class="ml-2"> @nathanf</strong>
+                </div>
+                <h1 class="font-weight-bolder display-4">1987</h1>
+                <p class="text-secondary text-uppercase follower">Followers</p>
+                <div class="col-7 col-lg-8 ml-lg-0 row ml-4 ">
+                    <img class="arrow" src="images/icon-up.svg" alt="arroww up" />
+                    <p class="font-weight-bolder remaining h-25">  12 Today</p>
+                </div>
+            </div>
+            <div class=" jumbotron d-flex flex-column align-items-center twitter col-lg-3 mx-lg-3 py-lg-4 card ">
+                <div class="row">
+                    <img src="images/icon-twitter.svg" alt="icon twitter " />
+                    <strong class="ml-2"> @nathanf</strong>
+                </div>
+                <h1 class="font-weight-bolder display-4">1044</h1>
+                <p class="text-secondary text-uppercase follower">Followers</p>
+                <div class="col-7 col-lg-8 row ml-4 ml-lg-0">
+                    <img class="arrow" src="images/icon-up.svg" alt="arroww up" />
+                    <p class="font-weight-bolder remaining">  99 Today</p>
+                </div>
+            </div>
+            <div class="pt-1 instagram col-lg-3 px-0 ">
+                <div class=" jumbotron d-flex flex-column align-items-center py-lg-4 m-0 h-100 card ">
+                    <div class="row">
+                        <img src="images/icon-instagram.svg" alt="icon instagram " />
+                        <strong class="ml-1"> @realnathanf</strong>
+                    </div>
+                    <h1 class="font-weight-bolder display-4">11k</h1>
+                    <p class="text-secondary text-uppercase follower">Followers</p>
+                    <div class="col-7 col-lg-9 row ml-lg-0 ml-4">
+                        <img class="arrow" src="images/icon-up.svg" alt="arroww up" />
+                        <p class="font-weight-bolder remaining">  1099 Today</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" jumbotron d-flex flex-column align-items-center youtube col-lg-3 py-lg-4 ml-lg-3 card ">
+                <div class="row">
+                    <img src="images/icon-youtube.svg" alt="icon youtube " />
+                    <strong class="ml-2">Nathan F.</strong>
+                </div>
+                <h1 class="font-weight-bolder display-4">8239</h1>
+                <p class="text-secondary text-uppercase follower">subcribers</p>
+                <div class="col-7 col-lg-9 row ml-4">
+                    <img class="arrow" src="images/icon-down.svg" alt="arroww up" />
+                    <p class="font-weight-bolder decrease">  144 Today</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container-fluid  ">
+            <h3 class="font-weight-bold">Overview - Today</h3>
+
+            <!--upper-->
+            <div class="d-lg-flex flex-row">
+                <!--start-->
+                <!--#1-->
+                <div class="jumbotron col-lg-3 report py-lg-5 card">
+                    <div class="position-relative">
+                        <b class=" text-secondary">Pageviews</b>
+                        <img class=" icon" src="images/icon-facebook.svg" alt="fb" />
+                    </div>
+                    <div class="mt-4">
+                        <strong class="number">87</strong>
+                        <div class="row float-right m-3">
+                            <img class="arrow" src="images/icon-up.svg" alt="arroww up" />
+                            <b class="remaining">3%</b>
+                        </div>
+                    </div>
+                </div>
+
+                <!--#2-->
+                <div class="jumbotron col-lg-3 mx-lg-3 report py-lg-5 card">
+                    <div class="position-relative">
+                        <b class=" text-secondary">Likes</b>
+                        <img class=" icon" src="images/icon-facebook.svg" alt="fb" />
+                    </div>
+                    <div class="mt-4">
+                        <strong class="number">52</strong>
+                        <div class="row float-right m-3">
+                            <img class="arrow" src="images/icon-down.svg" alt="arroww down" />
+                            <b class="decrease">2%</b>
+                        </div>
+                    </div>
+                </div>
+
+                <!--#3-->
+                <div class="jumbotron col-lg-3 report py-lg-5 card">
+                    <div class="position-relative">
+                        <b class=" text-secondary">Likes</b>
+                        <img class=" icon" src="images/icon-instagram.svg" alt="instagram" />
+                    </div>
+                    <div class="mt-4">
+                        <strong class="number">5462</strong>
+                        <div class="row float-right m-3">
+                            <img class="arrow" src="images/icon-up.svg" alt="arroww up" />
+                            <b class="remaining">2257%</b>
+                        </div>
+                    </div>
+                </div>
+
+                <!--#4-->
+                <div class="jumbotron col-lg-3 mx-lg-3 report py-lg-5 card">
+                    <div class="position-relative">
+                        <b class=" text-secondary">Profile Views</b>
+                        <img class=" icon" src="images/icon-instagram.svg" alt="instagram" />
+                    </div>
+                    <div class="mt-4">
+                        <strong class="number">52k</strong>
+                        <div class="row float-right m-3">
+                            <img class="arrow" src="images/icon-up.svg" alt="arroww up" />
+                            <b class="remaining">1375%</b>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end-->
+            </div>
+
+            <!--lower-->
+            <div class="d-lg-flex flex-row">
+                <!--start-->
+                <!--#1-->
+                <div class="jumbotron col-lg-3 report py-lg-5 card">
+                    <div class="position-relative">
+                        <b class="text-secondary">Retweets</b>
+                        <img class=" icon" src="images/icon-twitter.svg" alt="twwiter" />
+                    </div>
+                    <div class="mt-4">
+                        <strong class="number">117</strong>
+                        <div class="row float-right m-3">
+                            <img class="arrow" src="images/icon-up.svg" alt="arroww up" />
+                            <b class="remaining">303%</b>
+                        </div>
+                    </div>
+                </div>
+
+                <!--#2-->
+                <div class="jumbotron col-lg-3 mx-lg-3 report py-lg-5 card">
+                    <div class="position-relative">
+                        <b class="text-secondary">Likes</b>
+                        <img class=" icon" src="images/icon-twitter.svg" alt="twwiter" />
+                    </div>
+                    <div class="mt-4">
+                        <strong class="number">507</strong>
+                        <div class="row float-right m-3">
+                            <img class="arrow" src="images/icon-up.svg" alt="arroww up" />
+                            <b class="remaining">533%</b>
+                        </div>
+                    </div>
+                </div>
+
+                <!--#3-->
+                <div class="jumbotron col-lg-3 report py-lg-5 card">
+                    <div class="position-relative">
+                        <b class="text-secondary">Likes</b>
+                        <img class=" icon" src="images/icon-youtube.svg" alt="youtube" />
+                    </div>
+                    <div class="mt-4">
+                        <strong class="number">107</strong>
+                        <div class="row float-right m-3">
+                            <img class="arrow" src="images/icon-down.svg" alt="arroww down" />
+                            <b class="decrease">19%</b>
+                        </div>
+                    </div>
+                </div>
+
+                <!--#4-->
+                <div class="jumbotron col-lg-3 ml-lg-3 report py-lg-5 card">
+                    <div class="position-relative">
+                        <b class="text-secondary">Total Views</b>
+                        <img class=" icon" src="images/icon-youtube.svg" alt="youtube" />
+                    </div>
+                    <div class="mt-4">
+                        <strong class="number">1407</strong>
+                        <div class="row float-right m-3">
+                            <img class="arrow" src="images/icon-down.svg" alt="arroww down" />
+                            <b class="decrease">12%</b>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end-->
+            </div>
+        </section>
+    </div> 
+</body>
+</html>
